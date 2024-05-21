@@ -43,9 +43,15 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 ### Aula "Criando a Primeira Migration"
 + `npx knex -h` : comando de help que mostra vários comandos disponíveis no knex.
 
-+ `"knex": "node --import tsx ./node_modules/.bin/knex"` : com o comando `npm run knex` esse script é rodado e permite usar o "tsx" com o knex (que não é algo convencional)
++ `"knex": "node --no-warnings --import tsx ./node_modules/.bin/knex"` : com o comando `npm run knex` esse script é rodado e permite usar o "tsx" com o knex (que não é algo convencional)
 + `npm run knex -- -h` : forma de passar o parâmetro "-h" para o knex e não para o npm ao usar o script anterior.
 + `npm run knex -- migrate:make create-documents` : cria a migrate create-documents relativa à ação de criar uma tabela de documentos.
   > **_OBS:_**  Necessita do arquivo knexfile.ts na pasta raiz do projeto importando as configurações do banco.
 
   > **_OBS2:_**  O nome da migrate simboliza uma ação no banco de dados.
+
+  ### Aula "Criando tabela de Transações"
+
++ `npm run knex -- migrate:latest` : lê todas as migrations e as executa.
++ `npm run knex -- migrate:rollback` : volta a última migration executada na sua máquina.
+  > **_OBS:_**  Só faz sentido caso ainda não tenha mandado a migration para o resto do time de desenvolvimento, pois, nesse caso, é necessário criar outra migration.
