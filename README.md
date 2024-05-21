@@ -4,7 +4,7 @@ Esse módulo possui a estruturação de um projeto NodeJS conectado a um banco d
 
 ___
 ### Palavras chave:
->Fastify, Typescript, ESlint, SQLite, Knex, Migrations, 
+>Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod
 
 ## Principais comandos:
 
@@ -50,8 +50,17 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 
   > **_OBS2:_**  O nome da migrate simboliza uma ação no banco de dados.
 
-  ### Aula "Criando tabela de Transações"
+### Aula "Criando tabela de Transações"
 
 + `npm run knex -- migrate:latest` : lê todas as migrations e as executa.
 + `npm run knex -- migrate:rollback` : volta a última migration executada na sua máquina.
   > **_OBS:_**  Só faz sentido caso ainda não tenha mandado a migration para o resto do time de desenvolvimento, pois, nesse caso, é necessário criar outra migration.
+
+### Aula "Variável ambiente"
+
++ `npm i dotenv` : permite que o node entenda o arquivo .env na pasta raíz do projeto. Esse arquivo permite configurar diferentes ambientes: desenvolvimento, produção, teste, etc.
+  > **_OBS:_**  Instalar extensão DotENV do VSCode.
+
+### Aula "Tratando env com Zod"
+
++ `npm i zod` : biblioteca para validação de dados dentro do projeto. Auxilia na configuração do ".env".
