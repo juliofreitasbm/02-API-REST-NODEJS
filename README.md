@@ -4,7 +4,7 @@ Esse módulo possui a estruturação de um projeto NodeJS conectado a um banco d
 
 ___
 ### Palavras chave:
->Fastify, Typescript, ESlint, SQLite, Knex
+>Fastify, Typescript, ESlint, SQLite, Knex, Migrations, 
 
 ## Principais comandos:
 
@@ -13,7 +13,7 @@ ___
 + `npm init -y` : cria o package.json para iniciar o projeto NodeJS.
 + `npm i -D typescript` : instala o typescript como dependência de desenvolvimento (cria a pasta node_modules).
 + `npx tsc --init`: executa o arquivo binário tsc dentro de ./node_modules/.bin/ para criar o arquivo tsconfig.json.
-  > **_OBS:_**  Mudar "target" para "es2020".
+  > **_OBS:_**  Mudar "target" para "es2020" dentro do tsconfig.json.
 + `npx tsc src/index.ts` : converte o arquivo "src/index.ts" para um arquivo javascript.
 + `node src/index.js` : executa arquivo javascript com o node.
 
@@ -31,9 +31,9 @@ ___
 com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da pasta "src".
   > **_OBS:_**  Necessita do arquivo .eslintrc.json para configuração do ESLint.
 
-  > **_OBS:_**  Necessita da extensão do VScode ESLint.
+  > **_OBS2:_**  Necessita da extensão do VScode ESLint.
   
-  > **_OBS:_**  Necessário configurar o settings.json do VScode para utilizar o eslint também.
+  > **_OBS3:_**  Necessário configurar o settings.json do VScode para utilizar o eslint também.
 
 ### Aula "Configurando o Knex"
 
