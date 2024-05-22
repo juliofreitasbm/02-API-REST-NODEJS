@@ -6,6 +6,25 @@ ___
 ### Palavras chave:
 >Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod
 
+## Acompanhamento do Projeto:
+
+### Requisitos Funcionais:
+
+- [x] O usuário deve poder criar uma nova transação;
+- [x] O usuário deve poder obter um resumo da sua conta;
+- [x] O usuário deve poder listar todas transações que já ocorreram;
+- [x] O usuário deve poder visualizar uma transação única;
+
+### Regras de Negócio:
+
+- [x] A transação pode ser do tipo crédito que somará ao valor total, ou débito subtrairá;
+- [ ] Deve ser possível identificarmos o usuário entre as requisições;
+- [ ] O usuário só pode visualizar transações o qual ele criou;
+
+### Requisitos Não Funcionais:
+
+- [ ]
+
 ## Principais comandos:
 
 ### Aula "Entendendo o Typescript"
@@ -64,3 +83,7 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 ### Aula "Tratando env com Zod"
 
 + `npm i zod` : biblioteca para validação de dados dentro do projeto. Auxilia na configuração do ".env".
+
+### Aula "Utilizando cookies no Fastfy"
+
++ `npm i @fastify/cookie` : permite trabalhar com cookies dentro do fastify. Cookies permitem manter contexto entre as requisições.
