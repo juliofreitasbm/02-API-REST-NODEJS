@@ -91,23 +91,23 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 ### Aula "Criando primeiro teste"
 
 + `npm i vitest -D` : Vitest é um framework para escrita de testes automatizados.
-> **_OBS:1_**  Esse framework é semelhante em sintaxe ao Jest, mas utiliza por trás um motor de conversão de .ts para .js do tsx e, portanto, tem maior compatibilidade com esse projeto. Ele também é mais rápido e possui uma instalação mais fácil que o Jest.
-> **_OBS2:_**  Se tiver algum erro tente rodar `npm remove vitest` e instalar novamente.
+  > **_OBS:1_**  Esse framework é semelhante em sintaxe ao Jest, mas utiliza por trás um motor de conversão de .ts para .js do tsx e, portanto, tem maior compatibilidade com esse projeto. Ele também é mais rápido e possui uma instalação mais fácil que o Jest.
+  > **_OBS2:_**  Se tiver algum erro tente rodar `npm remove vitest` e instalar novamente.
 
 + `npx vitest` : Comando para rodar os testes criados.
-> **_OBS:_**  Nesse projeto foi criado um script `"test": "vitest"` para rodar esse comando como `npm run test`.
+  > **_OBS:_**  Nesse projeto foi criado um script `"test": "vitest"` para rodar esse comando como `npm run test`.
 
 ### Aula "Testando criação de transação"
 
 + `npm i supertest -D` : Ferramenta que permite fazer testes sem precisar rodar a aplicação inteira.
-> **_OBS:_**  Dessa forma não precisamos utilizar a porta em que a aplicação está e também não precisamos utilizar outra porta.
+  > **_OBS:_**  Dessa forma não precisamos utilizar a porta em que a aplicação está e também não precisamos utilizar outra porta.
 
 + `npm i -D @types/supertest` : Biblioteca mantida pela comunidade que permite transformar declarações da supertest para typescript, para que as variáveis sejam entendidas dentro da nossa aplicação.
 
 ### Aula "Preparando para deploy"
 
 + `npm i tsup -D` : Ferramenta que utiliza o tsx por baixo dos panos para converter o .ts para .js para fazer o deploy da aplicação.
-> **_OBS:_**  Nesse projeto criamos o script `"build": "tsup src --out-dir build"` para rodar `npm run build`.
+  > **_OBS:_**  Nesse projeto criamos o script `"build": "tsup src --out-dir build"` para rodar `npm run build`.
 
 + `node build/server.js` : Comando para testar a aplicação buildada em .js.
 
