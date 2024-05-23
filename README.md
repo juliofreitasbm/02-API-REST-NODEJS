@@ -95,12 +95,29 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 > **_OBS2:_**  Se tiver algum erro tente rodar `npm remove vitest` e instalar novamente.
 
 + `npx vitest` : Comando para rodar os testes criados.
-> **_OBS:_**  Nesse projeto foi criado um script `"test": "vitest"` para rodar esse comando.
+> **_OBS:_**  Nesse projeto foi criado um script `"test": "vitest"` para rodar esse comando como `npm run test`.
 
 ### Aula "Testando criação de transação"
 
-+ `npm i supertest -D` : Ferramenta que permite fazer testes sem precisar subir a aplicação inteira pro ar.
++ `npm i supertest -D` : Ferramenta que permite fazer testes sem precisar rodar a aplicação inteira.
 > **_OBS:_**  Dessa forma não precisamos utilizar a porta em que a aplicação está e também não precisamos utilizar outra porta.
 
-+ `npm i -D @types/supertest` : Biblioteca mantida pela comunidade que permite transforma declarações da supertest para typescript, para que as variáveis sejam entendidas dentro da nossa aplicação.
++ `npm i -D @types/supertest` : Biblioteca mantida pela comunidade que permite transformar declarações da supertest para typescript, para que as variáveis sejam entendidas dentro da nossa aplicação.
 
+### Aula "Preparando para deploy"
+
++ `npm i tsup -D` : Ferramenta que utiliza o tsx por baixo dos panos para converter o .ts para .js para fazer o deploy da aplicação.
+> **_OBS:_**  Nesse projeto criamos o script `"build": "tsup src --out-dir build"` para rodar `npm run build`.
+
++ `node build/server.js` : Comando para testar a aplicação buildada em .js.
+
+### Conteúdo extra (Não mostrado no curso): "Instalação do git CLI (gh) para Fedora"
+```bash
+sudo dnf install 'dnf-command(config-manager)'
+
+sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+
+sudo dnf install gh
+```
++ `gh auth login` : Autenticação no github.
++ `gh repo create` : Criação de repositório remoto.
