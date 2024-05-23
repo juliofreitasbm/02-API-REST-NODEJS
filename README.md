@@ -4,7 +4,7 @@ Esse módulo possui a estruturação de um projeto NodeJS conectado a um banco d
 
 ___
 ### Palavras chave:
->Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod
+>Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod, Vitest,
 
 ## Acompanhamento do Projeto:
 
@@ -87,3 +87,20 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 ### Aula "Utilizando cookies no Fastfy"
 
 + `npm i @fastify/cookie` : permite trabalhar com cookies dentro do fastify. Cookies permitem manter contexto entre as requisições.
+
+### Aula "Criando primeiro teste"
+
++ `npm i vitest -D` : Vitest é um framework para escrita de testes automatizados.
+> **_OBS:1_**  Esse framework é semelhante em sintaxe ao Jest, mas utiliza por trás um motor de conversão de .ts para .js do tsx e, portanto, tem maior compatibilidade com esse projeto. Ele também é mais rápido e possui uma instalação mais fácil que o Jest.
+> **_OBS2:_**  Se tiver algum erro tente rodar `npm remove vitest` e instalar novamente.
+
++ `npx vitest` : Comando para rodar os testes criados.
+> **_OBS:_**  Nesse projeto foi criado um script `"test": "vitest"` para rodar esse comando.
+
+### Aula "Testando criação de transação"
+
++ `npm i supertest -D` : Ferramenta que permite fazer testes sem precisar subir a aplicação inteira pro ar.
+> **_OBS:_**  Dessa forma não precisamos utilizar a porta em que a aplicação está e também não precisamos utilizar outra porta.
+
++ `npm i -D @types/supertest` : Biblioteca mantida pela comunidade que permite transforma declarações da supertest para typescript, para que as variáveis sejam entendidas dentro da nossa aplicação.
+
