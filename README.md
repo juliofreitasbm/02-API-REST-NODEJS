@@ -111,13 +111,17 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 
 + `node build/server.js` : Comando para testar a aplicação buildada em .js.
 
-### Conteúdo extra (Não mostrado no curso): "Instalação do git CLI (gh) para Fedora"
-```bash
-sudo dnf install 'dnf-command(config-manager)'
++ Conteúdo não mostrado em aula: instalação do git CLI (gh) para Fedora
+  ```bash
+  sudo dnf install 'dnf-command(config-manager)'
 
-sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
+  sudo dnf config-manager --add-repo https://cli.github.com/packages/rpm/gh-cli.repo
 
-sudo dnf install gh
-```
+  sudo dnf install gh
+  ```
+
 + `gh auth login` : Autenticação no github.
+
 + `gh repo create` : Criação de repositório remoto.
+
++ `gh repo view -w` : Abre uma aba no navegador para visualizar o projeto dentro do github.
