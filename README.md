@@ -1,6 +1,6 @@
 # Módulo 2 de NodeJS Rocket-Seat
 
-Esse módulo possui a estruturação de um projeto NodeJS conectado a um banco de dados SQLite com implementação de rotas e testes automatizados.
+Esse módulo possui a estruturação de um projeto NodeJS conectado a um banco de dados SQLite para desenvolvimento e PostgreSQL para produção. Possui implementação de rotas e testes automatizados.
 
 ___
 ### Palavras chave:
