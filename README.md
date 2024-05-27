@@ -4,7 +4,7 @@ Esse módulo possui a estruturação de um projeto NodeJS conectado a um banco d
 
 ___
 ### Palavras chave:
->Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod, Vitest,Render
+>Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod, Vitest, Render
 
 ### API disponível por 1 mês a partir de 27/05/2024:
 >[Link do Render](https://ignite-nodejs-02-api-3jjk.onrender.com)
