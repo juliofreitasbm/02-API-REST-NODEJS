@@ -4,7 +4,7 @@ Esse módulo possui a estruturação de um projeto NodeJS conectado a um banco d
 
 ___
 ### Palavras chave:
->Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod, Vitest,
+>Fastify, Typescript, ESlint, SQLite, Knex, Migrations, .env, zod, Vitest,Render
 
 ## Acompanhamento do Projeto:
 
@@ -57,7 +57,7 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 ### Aula "Configurando o Knex"
 
 + `npm install sqlite3` : instala o knex para o sqlite3 como dependência de produção.
-  > **_OBS:_**  Knex é um query builder, ou seja, permite fazer queries no banco de dados utilizando uma sintaxe simplificada que pode ser convertida para atender á diferentes DBs.
+  > **_OBS:_**  Knex é um query builder, ou seja, permite fazer queries no banco de dados utilizando uma sintaxe simplificada que pode ser convertida para atender á diferentes DBs. Pode ser instalado com `-D` para ser dependência de 
 
 ### Aula "Criando a Primeira Migration"
 + `npx knex -h` : comando de help que mostra vários comandos disponíveis no knex.
@@ -125,3 +125,7 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 + `gh repo create` : Criação de repositório remoto.
 
 + `gh repo view -w` : Abre uma aba no navegador para visualizar o projeto dentro do github.
+
+### Aula "Deploy do app no Render"
+  > **_OBS:_**  Sugestões de plataformas para fazer o deploy do projeto: render.com, fly.io, railway.app.
++ `npm i pg` : Instala o postgress como dependência de produção, pois será o banco utilizado para o projeto.
