@@ -58,8 +58,13 @@ com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da
 
   > **_OBS2:_**  Necessita da extensão do VScode ESLint.
   
-  > **_OBS3:_**  Necessário configurar o settings.json do VScode para utilizar o eslint também.
-
+  > **_OBS3:_**  Necessário configurar o settings.json do VScode para utilizar o eslint adicionando o seguinte código.
+  ```
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+  ```
+  
 ### Aula "Configurando o Knex"
 
 + `npm install sqlite3` : instala o knex para o sqlite3 como dependência de produção.
