@@ -49,6 +49,9 @@ ___
 
 ### Aula "Configurando ESLint"
 
++ `npm i eslint -D` : Instala o ESLint.
++ `npm i eslint @rocketseat/eslint-config -D` : Instala as configurações da RocketSeat para o ESLint.
++ `npx eslint --init` : Permite configurar o ESLint para personalizar o projeto. 
 + `"lint": "eslint src -ext .ts` : 
 com o comando `npm run lint` esse script corrige todos os arquivos .ts dentro da pasta "src".
   > **_OBS:_**  Necessita do arquivo .eslintrc.json para configuração do ESLint.
