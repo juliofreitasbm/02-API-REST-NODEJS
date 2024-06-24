@@ -9,6 +9,83 @@ ___
 ### API disponível por 1 mês a partir de 27/05/2024:
 >[Link do Render](https://ignite-nodejs-02-api-3jjk.onrender.com)
 
+## Conteúdo Programático do Módulo 2:
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">1. Estrutura da aplicação</strong></summary>
+
+  ---
+
+  + Introdução
+  + Conhecendo o Fastify
+  + Entendendo o Typescript
+  + Criando aplicação
+  + Configurando ESLint
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">2. Banco de dados</strong></summary>
+
+  ---
+
+  + Estratégias de acesso ao banco
+  + Configurando o Knex
+  + Criando primeira migration
+  + Criando tabela de transações
+  + Realizando queries com Knex
+  + Variáveis ambiente
+  + Tratando env com Zod
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">3. Implementando as rotas</strong></summary>
+
+  ---
+
+  + Requisitos da aplicação
+  + Plugins do Fastify
+  + Criação de transações
+  + Tipagem no Knex
+  + Listagem das transações
+  + Resumo de transações
+  + Utilizando cookies no Fastify
+  + Validando existência do cookie
+  + Configurando um hook global
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">4. Testes automatizados</strong></summary>
+
+  ---
+
+  + Entendo testes automatizados
+  + Criando primeiro teste
+  + Testando criação de transação
+  + Categorizando os testes
+  + Testando listagem de transações
+  + Configurando banco de testes
+  + Finalizando testes da aplicação
+
+  ---
+</details>
+
+<details style="font-size: 16px">
+<summary><strong style="font-size: 18px">5. Preparando app p/ deploy</strong></summary>
+
+  ---
+
+  + Preparando para deploy
+  + Deploy do app no Render
+
+  ---
+</details>
+
 ## Acompanhamento do Projeto:
 
 ### Requisitos Funcionais:
